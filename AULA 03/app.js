@@ -1,3 +1,10 @@
+/*****************************************************************
+ * Objetivo: Usar calcálos matemáticos (soma, subtração, divisão, multiplicação).
+ * Data: 30/01//2023
+ * Autor: Camila Pinheiro
+ * Versão: 1.0
+******************************************************************/
+
 console.log('************************Calculadora************************');
 
 
@@ -39,17 +46,15 @@ entradaDados.question('Digite o primeiro valor: \n', function (numero1) {
                         resultado = valor1 * valor2
                         console.log('Resultado: ' + resultado.toFixed(3));
                     } else if (Number(operacao) == 4) {
-                        resultado = valor1 / valor2
-                        console.log('Resultado: ' + resultado.toFixed(3));
+                        resultado = (valor1 / valor2)
+                        console.log('Resultado: ' + resultado);
                     } else if (operacao == '') {
                         console.log('Erro: escolha números validos.')
                     } else if (isNaN(operacao)) {
                         console.log('Erro: digite números validos.')
-                    } else if (operacao < 0 || operacao >= 4) {
+                    } else if (operacao < 1 || operacao > 4) {
                         console.log('Selecione um número de 1 até 4')
-                    } else {
-                        console.log('deu merda!!')
-                    }
+                    } 
                 })
             }
         })

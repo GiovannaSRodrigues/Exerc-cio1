@@ -38,8 +38,19 @@ entradaDados.question('Valor1: \n', function (numero1) {
                 console.log('ERRO: Não é possível calcular sem a entrada de valores numéricos.');
                 entradaDados.close(); // fecha o objeto de entrada de dados (encerra o programa)
             } else {
+
+                //Recebe da função o calculo dass operações (função que nós criamos)
                 resultado = matematica.calcular(valor1, valor2, operacao);
-                console.log(resultado);
+
+
+                // Verifica se o retorno da função é válido: se for exibe o valor 
+                // senão encerra o programa
+                if (resultado === false) {
+                    entradaDados.close();
+                } else{
+                    console.log(resultado);
+                }
+
             }
 
 

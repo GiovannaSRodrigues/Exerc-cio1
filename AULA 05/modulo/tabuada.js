@@ -1,7 +1,7 @@
 /*******************************************************************************************
  * Objetivo: Realizar o cálculo de uma tabuada tendo duas entradas: a tabuada e o contador.
  * Data: 09/02/2023
- * Autor: Camila Pinheiro
+ * Autor: Giovanna Rodrigues
  * Versão: 1.0
 ********************************************************************************************/
 
